@@ -47,7 +47,7 @@
   <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
     <a
       *ngFor="let product of productService.products"
-      routerLink="/item"
+      [routerLink]="['/item', product.cod]"
       class="animated fadeIn rk-item ae-masonry__item"
     >
       <img src="assets/img/{{ product.url }}.jpg" alt="" />
