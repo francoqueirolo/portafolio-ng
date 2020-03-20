@@ -15,7 +15,6 @@ export class InfoPaginaService {
   constructor( private http: HttpClient ) {
     this.loadInfo();
     this.loadTeam();
-
   }
 
   loadInfo() {
